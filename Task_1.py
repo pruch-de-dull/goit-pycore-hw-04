@@ -14,7 +14,6 @@ def total_salary(path):
                     continue
 
                 try:
-                    # Пропуски після коми для PEP 8
                     name, salary_str = line.split(',')
                     total_salary_sum += float(salary_str)
                     num_developers += 1
