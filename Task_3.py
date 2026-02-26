@@ -15,7 +15,7 @@ def list_structure(directory_path, indent=0):
         prefix = "    " * indent
         if item.is_dir():
             print(Fore.BLUE + f"{prefix}📁 {item.name}/")
-            list_structure(item, indent + 1)  # рекурсивний виклик
+            list_structure(item, indent + 1) 
         else:
             print(Fore.GREEN + f"{prefix}📜 {item.name}")
 
