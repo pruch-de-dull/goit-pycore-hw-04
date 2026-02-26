@@ -8,10 +8,11 @@ def parse_input(user_input):
 
 
 def add_contact(args, contacts):
-    """Додає новий контакт до словника."""
     if len(args) < 2:
         return "Error: Give me name and phone please."
     name, phone = args
+    if name in contacts:
+        return f"Contact '{name}' already exists. Use 'change' to update."
     contacts[name] = phone
     return "Contact added."
 
