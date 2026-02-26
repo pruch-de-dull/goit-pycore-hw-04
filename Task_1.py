@@ -37,8 +37,7 @@ def total_salary(path):
 
 def main():
     total, average = total_salary("salary_file.txt")
-    if total > 0:
-        print(f"Всього: {total}, Середня: {average}")
+    print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
 
 
 if __name__ == "__main__":
